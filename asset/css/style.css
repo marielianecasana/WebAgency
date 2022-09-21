@@ -1,0 +1,412 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0 0.2em;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    width: 100%;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    text-decoration: none;
+
+}
+
+/*Navbar*/
+.navbar {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5rem;
+    line-height: 70px;
+}
+
+.icon {
+    fill: rgb(29, 148, 156);
+    cursor: pointer;
+
+}
+
+.navbar input,
+.nav-menu,
+.dropdown {
+    display: none;
+}
+
+[id^=btn]:checked+ul {
+    display: block;
+}
+
+.nav-menu {
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+
+.nav-item a,
+.drop-item a,
+.show {
+    color: grey;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 1.2rem;
+}
+
+.nav-menu a:hover,
+.show:hover {
+    color: red;
+}
+
+@media screen and (min-width: 768px) {
+    .icon {
+        display: none;
+    }
+
+    .nav-menu {
+        display: initial;
+        position: static;
+    }
+
+    .nav-item {
+        display: inline-block;
+        margin-left: 20px;
+        position: relative;
+    }
+
+    .dropdown {
+        position: absolute;
+        background-color: black;
+        top: 70px;
+        right: 0;
+        padding-right: 40px;
+        width: max-content;
+    }
+
+}
+
+/*FirstContainer*/
+.FirstContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FirstContainer h1 {
+
+    text-transform: uppercase;
+
+}
+
+h1 {
+    color: #5dadd3;
+
+}
+
+h1 span {
+    color: #767676;
+
+}
+
+.FirstContainer p {
+    display: inline-flex;
+    width: 75%;
+    color: #767676;
+}
+
+.infos {
+    display: inline-flex;
+    color: white;
+    text-decoration: none;
+    background-color: #5dadd3;
+    border-radius: 5%;
+    font-size: 10px;
+}
+
+.FirstContainer img {
+    padding-top: 7%;
+}
+
+/*SecondContainer*/
+.SecondContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.SecondContainer h2 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+.SecondContainer p {
+    padding-bottom: 5%;
+    color: #767676;
+}
+
+.SecondContainer article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding-top: 5%;
+}
+
+/*Third Container*/
+.ThirdContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: rgba(128, 128, 128, 0.216);
+}
+
+.ThirdContainer h2 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+.ThirdContainer p {
+    padding-bottom: 5%;
+}
+
+.iframe {
+
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+
+.iframe:hover {
+    background-color: rgba(0, 255, 255, 0.104);
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.img:hover {
+    opacity: .5;
+}
+
+.lienInt {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lienInt:hover {
+    color: rgb(31, 28, 28);
+    background-color: wheat;
+    opacity: .8;
+}
+
+.lienInt {
+    background-color: rgb(167, 165, 165);
+    font-weight: bolder;
+    border-radius: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+    height: 2em;
+
+
+}
+
+.lienInt a {
+    text-decoration: none;
+    color: rgb(62, 57, 57);
+}
+
+
+.imgSites {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/*Fourth*/
+.fourthContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.iframe {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 255, 255, 0.104);
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.address ul {
+    list-style-type: none;
+    font-style: normal;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.contact {
+    font-size: 150%;
+    font-weight: bolder;
+    padding-bottom: 5%;
+}
+
+.nom {
+    font-size: 100%;
+    font-weight: bolder;
+}
+
+.imput {
+    width: 22em;
+    margin-top: 1em;
+    border-color: #ded7d7;
+}
+
+#message {
+    resize: none;
+    border-color: #ded7d7;
+    margin-bottom: 1em;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+    opacity: 0.5;
+}
+
+.footer {
+    display: block;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+/*MediaQueries*/
+@media (min-width: 576px) {
+    .ContainerSecond {
+        display: inline-block;
+    }
+
+    .ContainerSecond p {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .imgSites {
+        display: inline-block;
+        flex-direction: column;
+        columns: 2;
+    }
+
+    .iframe {
+        position: relative;
+        height: 42em;
+
+    }
+
+    .info {
+        position: absolute;
+        right: 15px;
+        margin-top: 4%;
+
+    }
+}
+
+@media (min-width: 1036px) {
+    .SecondContainer article {
+        display: inline-block;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        width: 15%;
+    }
+}
+
+@media (min-width: 1090px) {
+    .ThirdContainer h2 {
+        padding: 5%;
+        padding-bottom: 2%;
+    }
+
+    .ThirdContainer p {
+        padding: 4%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .imgSites {
+        display: inline-block;
+        flex-direction: column;
+        columns: 4;
+    }
+}
+
+@media (min-width: 1300px) {
+    .ThirdContainer h2 {
+        padding: 0 2%;
+        padding-top: 3%;
+
+        display: inline-block;
+        padding-bottom: 2%;
+        height: 0.1em;
+    }
+
+    .ThirdContainer p {
+        padding: 0 15%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        display: inline-block;
+    }
+}
+
+
